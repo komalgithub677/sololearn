@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.teamsNavBalack{
+    background-color: black !important;
+}
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    width: 100%;
+}

@@ -1,0 +1,51 @@
+.webcamContainer {
+  position: relative;
+  width: 320px;
+  height: 240px;
+}
+
+.procrastinationRing {
+  width: 360px;
+  height: 280px;
+  top: -20px;
+  left: -20px;
+  border-radius: 50%;
+  animation: spin linear infinite;
+}
+
+.notification {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

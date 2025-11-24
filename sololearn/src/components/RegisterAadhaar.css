@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #fff);
+}
+
+.aadhaar-container {
+  max-width: 400px;
+  height: 100vh;
+  margin: 100px auto;
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease;
+}
+
+.aadhaar-container h3 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #333;
+}
+
+.aadhaar-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.aadhaar-form input[type="text"],
+.aadhaar-form input[type="number"] {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.aadhaar-form input[type="text"]:focus,
+.aadhaar-form input[type="number"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.aadhaar-form input[type="file"] {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.aadhaar-form button {
+  padding: 12px;
+  background: linear-gradient(45deg, #007bff, #00c6ff);
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.aadhaar-form button:hover {
+  background: linear-gradient(45deg, #0056b3, #00aaff);
+}
+
+.aadhaar-container p {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 500;
+  color: #333;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

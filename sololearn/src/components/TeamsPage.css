@@ -1,0 +1,140 @@
+
+.teams-page {
+    background-color: white;
+    color: #003366;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+
+  .teamsNavBalack{
+    background-color: black;
+  }
+  
+  .hero {
+    background-color: black; 
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+
+  
+  trusted-companies {
+    background-color: hsl(195, 66%, 77%); 
+    color: black;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .trusted-companies h2 {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Logo Container */
+  .company-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px; 
+  }
+  
+
+  .company-logos img {
+    height: 60px;
+  }
+  
+  
+  .company-logos img[src*="Amazon_logo.svg"],
+  .company-logos img[src*="Apple_logo_black.svg"],
+  .company-logos img[src*="SpaceX-Logo.svg"] {
+    filter: brightness(0); 
+  }
+  
+  .grow-your-people {
+    background-color: white;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .grow-your-people h2 {
+    color: #003366;
+  }
+  
+  .grow-your-people img {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  
+  .learning-benefits {
+    background-color: #e6f0ff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .learning-benefits h2 {
+    color: #003366;
+  }
+  
+  .benefits-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .benefit {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .benefit img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .benefit h3 {
+    color: #003366;
+    margin-top: 10px;
+  }
+  
+  
+  .cta {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .cta h2 {
+    font-size: 1.8em;
+  }
+  

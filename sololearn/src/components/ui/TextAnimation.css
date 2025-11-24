@@ -1,0 +1,245 @@
+.container {
+    font-size: 38px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .text {
+    color: #333;
+    margin-right: 5px;
+  }
+  
+  .animated-text {
+    display: inline-block;
+    min-width: 400px;
+    width: 200px;
+    text-align: center;
+    color: black;
+    position: relative;
+    margin: 0 5px;
+  }
+  
+  .bold-text {
+    font-weight: bold;
+    color: #007bff;
+    margin-left: 5px;
+  }
+  /* ✅ Section Styling */
+.why-code {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+}
+
+/* ✅ Title */
+.title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  color: #007bff;
+  background: rgba(0, 123, 255, 0.1);
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+/* ✅ Cards Layout */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* ✅ Card */
+.card {
+  background: white;
+  padding: 30px;
+  width: 360px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ✅ Different SVG Image Styling */
+.card-image {
+  width: 180px; /* Default size */
+  height: auto;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+
+/* Unique styling per image */
+.svg-popular {
+  width: 500px;
+}
+.svg-promising {
+  width: 500px;
+}
+.svg-fun {
+  width: 500px;
+}
+
+/* ✅ Card Text */
+.card-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  color: #555;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+/* ✅ Make Bold Text Stand Out */
+.card-title b,
+.card-description b {
+  font-weight: 800;
+  color: #222;
+}
+
+/* ✅ CTA Button */
+.cta-button {
+  margin-top: 50px;
+  padding: 14px 28px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items at the top */
+  background-color: white; /* White background */
+}
+
+/* Main Screen */
+.main-screen {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding-top: 20px;
+}
+
+/* Heading styling */
+.main-heading {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: black;
+  line-height: 1.2;
+}
+
+/* Container for Students & Professionals */
+.bottom-headings {
+  display: flex;
+  justify-content: space-between; /* Ensures even spacing */
+  align-items: center;
+  width: 80%; /* Adjusted width for proper spacing */
+  max-width: 1200px; /* Prevents it from stretching too much */
+  margin-top: 20px;
+}
+
+/* Individual sections */
+.students-section, .professionals-section {
+  width: 48%; /* Ensures both sections take up equal space */
+  text-align: center;
+}
+
+/* Heading styling */
+/* Container styling */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distributes space between items */
+  flex-wrap: wrap; /* Allows wrapping to new lines on smaller screens */
+  gap: 20px; /* Adds space between items */
+  margin: 20px 0; /* Adds vertical margin */
+}
+
+/* Headings styling */
+.students-heading, .professionals-heading {
+  font-size: 2.5rem; /* Font size for headings */
+  font-weight: 700;
+  color: black; /* Black color for headings */
+  margin: 0; /* Remove margin */
+}
+
+/* Paragraph styling */
+.students-paragraph, .professionals-paragraph {
+  font-size: 1.2rem; 
+  color: black; 
+  line-height: 1.5; 
+  margin: 0; /* Remove margin */
+}
+
+/* Button styling */
+.learn-button, .boost-button {
+  margin-top: 10px; 
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #0073e6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.learn-button:hover, .boost-button:hover {
+  background-color: #005bb5; /* Darker shade on hover */
+}
+
+/* Image Styling */
+.section-image {
+  width: 450px; /* Reduced size */
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column; /* Stack sections vertically */
+    gap: 30px;
+  }
+
+  .section-image {
+    width: 250px; /* Smaller images on mobile */
+  }
+}

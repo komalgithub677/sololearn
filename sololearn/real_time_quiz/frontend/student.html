@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Quiz - Student</title>
+  <link rel="stylesheet" href="student.css">
+</head>
+<body>
+  <div class="floating-particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <div class="container slide-in">
+    <div id="instructions" class="welcome-animation">
+      <div class="quiz-icon">🎯</div>
+      <h1>Welcome to the Quiz</h1>
+      <div class="instructions">
+        <p><strong>📋 Instructions:</strong></p>
+        <ul>
+          <li>Each question has a time limit</li>
+          <li>Once you submit an answer, you can't change it</li>
+          <li>Your score will be updated in real-time</li>
+          <li>Wait for the host to start the quiz</li>
+        </ul>
+      </div>
+
+      <form id="nameForm">
+        <h2>✨ Enter Your Name to Start</h2>
+        <div class="form-group">
+          <input type="text" id="nameInput" placeholder="Enter your name here..." required />
+        </div>
+        <button type="submit">🚀 Start Quiz</button>
+      </form>
+    </div>
+
+    <div id="quizContainer" class="quiz-container" style="display:none;">
+      <!-- Webcam overlay inside quiz area -->
+      <div id="webcam-overlay">
+        <video id="webcam-video" autoplay muted playsinline></video>
+      </div>
+      <div class="progress-container">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+      <div id="questionCounter" class="question-counter">Question 1 of 10</div>
+      <div id="timerWrapper" class="timer-wrapper">
+        <div id="timerBar" class="timer-bar"></div>
+      </div>
+      <p id="timer" class="timer-text">⏱ Time left: --</p>
+      <div class="auto-submit-note"><strong>Test will be auto-submitted for grading at 00:00</strong></div>
+      <div id="app">
+        <h2 id="questionText" class="question-text"></h2>
+        <div id="options" class="options"></div>
+        <div id="result" class="result"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="navButtons" class="nav-buttons">
+    <button id="nextBtn" class="nav-button">Next ➡</button>
+    <button id="summaryBtn" class="summary-button">✅ Summary</button>
+    <button id="submitTestBtn" class="submit-button">🎯 Submit Test</button>
+    <div id="result-container"></div>
+    <div id="finalScore" class="final-score"></div>
+  </div>
+
+  <audio id="correctSound" src="correct.mp3" preload="auto"></audio>
+  <audio id="wrongSound" src="wrong.mp3" preload="auto"></audio>
+
+  <div id="recording-status" style="text-align:center;margin-top:20px;color:green;"></div>
+
+  <!-- Load face-api.js (Browser-friendly version) -->
+<script defer src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+
+<!-- Load Socket.IO client -->
+<script src="/socket.io/socket.io.js"></script>
+
+<!-- Your custom JavaScript -->
+<script src="student.js"></script>
+</body>

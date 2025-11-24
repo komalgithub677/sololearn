@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard - Quiz Control</title>
+  <link rel="stylesheet" href="teacher.css">
+</head>
+<body>
+    <div class="dashboard-container slide-in">
+        <div class="header">
+            <h1>🎓 Teacher Dashboard</h1>
+            <p>Control and monitor your quiz session</p>
+        </div>
+
+        <div class="controls-section">
+            <h3 class="section-title">🎮 Quiz Controls</h3>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalStudents">0</div>
+                    <div class="stat-label">Students Connected</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="currentQuestion">1</div>
+                    <div class="stat-label">Current Question</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="averageScore">0%</div>
+                    <div class="stat-label">Average Score</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-layout">
+            <div class="responses-section">
+                <h3 class="section-title">💬 Student Responses</h3>
+                <div class="log-container">
+                    <pre id="log">Waiting for student responses...</pre>
+                </div>
+            </div>
+
+            <div class="scoreboard-section">
+                <h3 class="section-title">🏆 Live Scoreboard</h3>
+                <div id="scoreBoard" class="scoreboard">
+                    <div class="empty-state">
+                        No students connected yet...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Socket.IO should load first -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="teacher.js"></script>
+
+</body>
+</html>
